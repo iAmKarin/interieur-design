@@ -6,15 +6,15 @@ const html = document.querySelector("html");
 hamburgerMenu.addEventListener("click", () => {
   document.querySelector(".container").classList.toggle("change");
 });
-
+// smooth scroll to top:
 scrollBtn.addEventListener("click", () => {
   html.style.scrollBehavior = "smooth";
   setTimeout(() => {
     html.style.scrollBehavior = "unset";
   }, 1000);
 });
+// hide / show scroll button
 window.addEventListener("scroll", () => {
-  console.log(window.innerHeight, window.scrollY);
   if (window.scrollY > 20) {
     scrollBtn.style.display = "flex";
   } else {
