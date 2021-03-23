@@ -632,12 +632,12 @@ html {
   margin-top: 8rem;
   width: 100%;
 }
-@media (max-width: 130rem) {
+@media (max-width: 1300px) {
   .cards-wrapper {
     margin-top: 4rem;
   }
 }
-@media (max-width: 110rem) {
+@media (max-width: 1100px) {
   .cards-wrapper {
     flex-direction: column;
     align-items: center;
@@ -651,23 +651,23 @@ html {
   border-radius: 0.5rem;
   position: relative;
 }
-@media (max-width: 150rem) {
+@media (max-width: 1500px) {
   .card {
     width: 32rem;
   }
 }
-@media (max-width: 130rem) {
+@media (max-width: 1300px) {
   .card {
     width: 27rem;
   }
 }
-@media (max-width: 110rem) {
+@media (max-width: 1100px) {
   .card {
     margin-bottom: 8rem;
     width: 42rem;
   }
 }
-@media (max-width: 50rem) {
+@media (max-width: 500px) {
   .card {
     margin-bottom: 8rem;
     width: 35rem;
