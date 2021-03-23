@@ -21,3 +21,9 @@ window.addEventListener("scroll", () => {
     scrollBtn.style.display = "none";
   }
 });
+// spinner
+window.onload = () => {
+  setTimeout(() => {
+    document.querySelector("body").classList.add("display");
+  }, 2500);
+};
