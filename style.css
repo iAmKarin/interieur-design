@@ -553,9 +553,9 @@ html {
   height: 4rem;
   background-color: var(--green1);
   border-radius: 0.5rem;
-  display: flex;
   justify-content: center;
   align-items: center;
+  display: none;
 }
 
 .scroll-btn i {

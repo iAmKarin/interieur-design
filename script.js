@@ -1,10 +1,23 @@
-document.querySelector(".hamburger__menu").addEventListener("click", () => {
+const hamburgerMenu = document.querySelector(".hamburger__menu");
+const scrollBtn = document.querySelector(".scroll-btn");
+const html = document.querySelector("html");
+
+// event for hamburger menu / hide and visible
+hamburgerMenu.addEventListener("click", () => {
   document.querySelector(".container").classList.toggle("change");
 });
 
-document.querySelector(".scroll-btn").addEventListener("click", () => {
-  document.querySelector("html").style.scrollBehavior = "smooth";
+scrollBtn.addEventListener("click", () => {
+  html.style.scrollBehavior = "smooth";
   setTimeout(() => {
-    document.querySelector("html").style.scrollBehavior = "unset";
+    html.style.scrollBehavior = "unset";
   }, 1000);
+});
+window.addEventListener("scroll", () => {
+  console.log(window.innerHeight, window.scrollY);
+  if (window.scrollY > 20) {
+    scrollBtn.style.display = "flex";
+  } else {
+    scrollBtn.style.display = "none";
+  }
 });
